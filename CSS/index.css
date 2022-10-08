@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+    background-color: #4B4E52;
+    background-color: inherit;
+}
+body{
+    background-color: #4B4E52;
+    overflow: hidden;
+}
+/* header */
+.header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* .logo */
+.logo{
+    margin: 20px 30px;
+    color: #FAF8FF;
+    cursor:pointer;
+    margin-left: 130px;
+}
+.logo span{
+    color: #88A9A9;
+}
+
+/* navigation links */
+.navbar{
+    margin-right: 70px;
+}
+.navbar li{
+    display: inline-block;
+    margin: 20px 35px;
+}
+.navbar li a{
+    text-decoration: none;
+    font-size: 85%;
+    position: relative;
+    color: #FAF8FF;
+}
+
+/* nav links hover effect  */
+
+.navbar li a::after{
+    position: absolute;
+    content: '';
+    background-color: #88A9A9;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    transition: 0.2s;
+}
+.navbar li a:hover::after{
+    width: 100%;
+}
+
+/* Contact me  button */
+
+#chat{
+    padding-right: 20px;
+    border: none;
+    background-color: #88A9A9;
+    width:120px;
+    height: 30px;
+    border-radius: 40px;
+    text-align: center;
+    padding-left: 20px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+#chat:hover{
+    transform: scale(1.1);
+}
+
+/* Main */
+
+.container{
+    /* background-color: #88A9A9; */
+    width: 100vw;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main{
+    height: 500px;
+    /* background-color: red; */
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+/* main text */
+
+.maincontent{
+    color: #FAF8FF;
+    align-self: center;
+    font-size: 30px;
+    position: relative ;
+    right: 80px;
+    bottom: 20px;
+}
+.maincontent span{
+    color:#88A9A9;
+}
+.image img{
+    scale: 1.2;
+    position: relative;
+    bottom: 30px;
+}
+ /* buttons */
+.btn{
+    background-color: #88A9A9;
+    padding: 9px 20px;
+    border-radius: 30px;   
+    border: none;
+    font-weight: 100;
+    position: relative;
+    top: 10px;
+    transition: all .2s ease-in-out ;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.btn1{
+    padding: 7px 40px;
+}
+.btn2{
+    position: relative;
+    left: 15px;
+}
+
