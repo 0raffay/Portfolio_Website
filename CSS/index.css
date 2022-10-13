@@ -6,71 +6,83 @@
     background-color: #4B4E52;
     background-color: inherit;
 }
+html{
+    font-size: 62.5%;
+}
 body{
     background-color: #4B4E52;
-    overflow: hidden;
 }
 /* header */
-.header{
-    height: 100px;
+header{
+    height: 10rem;
+    padding: 0 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 /* .logo */
 .logo{
-    margin: 20px 30px;
+    font-size: 2rem;
     color: #FAF8FF;
     cursor:pointer;
-    margin-left: 130px;
 }
 .logo span{
     color: #88A9A9;
 }
 
 /* navigation links */
-.navbar{
-    margin-right: 70px;
-}
-.navbar li{
+
+nav li{
     display: inline-block;
-    margin: 20px 35px;
+    margin: 0 3.5rem;
 }
-.navbar li a{
+nav li a{
     text-decoration: none;
-    font-size: 85%;
-    position: relative;
+    font-size: 1.5rem;
     color: #FAF8FF;
+    position: relative;
 }
+/* toggle button */
+/* #toggle{
+    display: none;
+}
+.navbar label{
+    font-size: 20px;
+    color: #88A9A9;
+    font-weight: bold;
+} */
 
 /* nav links hover effect  */
 
-.navbar li a::after{
+nav li a::after{
     position: absolute;
     content: '';
     background-color: #88A9A9;
     left: 0;
-    bottom: -5px;
+    bottom: -.5rem;
     width: 0%;
-    height: 2px;
+    height: .2rem;
     transition: 0.2s;
 }
-.navbar li a:hover::after{
+nav li a:hover::after{
     width: 100%;
 }
 
+#button::after{
+    display: none;
+}
 /* Contact me  button */
 
 #chat{
-    padding-right: 20px;
+    font-size: 1.2rem;
+    padding-right: 2rem;
     border: none;
     background-color: #88A9A9;
-    width:120px;
-    height: 30px;
-    border-radius: 40px;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 4rem;
     text-align: center;
-    padding-left: 20px;
+    padding-left: 2rem;
     cursor: pointer;
     transition: all 0.1s ease-in-out;
 }
@@ -80,7 +92,7 @@ body{
 
 /* Main */
 
-.container{
+.section_1{
     /* background-color: #88A9A9; */
     width: 100vw;
     height: calc(100vh - 100px);
@@ -89,41 +101,44 @@ body{
     align-items: center;
     
 }
-.main{
-    height: 500px;
+.banner{
+    height: 50rem;
     /* background-color: red; */
     width: 90vw;
     display: flex;
+    align-items: center;
     justify-content: space-around;
     box-sizing: border-box;
 }
 /* main text */
 
-.maincontent{
+.banner_txt{
     color: #FAF8FF;
-    align-self: center;
-    font-size: 30px;
+    font-size: 3rem;
     position: relative ;
-    right: 80px;
-    bottom: 20px;
+    right:2rem;
+    bottom: 2rem;
+
 }
-.maincontent span{
+.banner_txt span{
     color:#88A9A9;
 }
-.image img{
-    scale: 1.2;
+.banner_img img{
+    height: 50rem;
     position: relative;
-    bottom: 30px;
+    bottom: 3rem;
 }
+
  /* buttons */
-.btn{
+
+ .btn{
     background-color: #88A9A9;
-    padding: 9px 20px;
-    border-radius: 30px;   
+    padding: .9rem 2rem;   
+    border-radius: 3rem;   
     border: none;
     font-weight: 100;
     position: relative;
-    top: 10px;
+    top: 1rem;
     transition: all .2s ease-in-out ;
     cursor: pointer;
 }
@@ -133,10 +148,34 @@ body{
 }
 
 .btn1{
-    padding: 7px 40px;
+    padding: .7rem 4rem;
 }
 .btn2{
     position: relative;
-    left: 15px;
+    left: 1.5rem;
 }
 
+@media (max-width:992px) and (min-width:882px) {
+    html{
+        font-size: 55%;
+    }    
+}
+
+@media (max-width:882px) and (min-width:768px) {
+    html{
+        font-size: 44%;
+    }    
+}
+
+@media (max-width:768px) {
+    html{
+        font-size: 40%%
+    }
+    nav{
+        display: none;
+    }
+    .logo{
+        justify-self: center;
+    }
+    
+}
